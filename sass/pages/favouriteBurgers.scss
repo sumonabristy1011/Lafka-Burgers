@@ -1,0 +1,17 @@
+@import "../layout/base";
+@import "../components/menu";
+@import "../layout/footer";
+@import "../components/product-menu";
+@import "../components/favourites";
+
+.burger-menu-wrapper {
+  height: 30vh;
+  width: 100%;
+  background-color: #a5102e;
+}
+
+.burger-content-wrapper{
+  height: 30vh;
+  width: 100%;
+  background-color: #eee;
+}

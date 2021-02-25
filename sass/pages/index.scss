@@ -1,0 +1,224 @@
+@import "../layout/base";
+
+header {
+  background-color: #a5102e;
+  background-image: url("../../image/blur-tomato.png");
+  background-size: cover;
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 2rem;
+  @include respond(phone) {
+    padding: 1rem;
+    background-image: none;
+  }
+  @media (min-height: 62.5em) and (max-width: 75em) {
+    height: 75vh;
+  }
+  @media (min-height: 75em) and (max-width: 75em) {
+    height: 60vh;
+  }
+  @media (max-height: 42.5em) and (max-width: 22.5em) {
+    height: 120vh;
+  }
+}
+
+@import "../components/menu";
+
+.header-body {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../image/vintage-burst3.png");
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-size: 40%;
+  @include respond(phone) {
+    background-position: center 5.5rem;
+    background-size: 90%;
+    margin-top: 6rem;
+  }
+  @media (max-height: 46.9em) and (max-width: 37.5em) {
+    margin-top: 3rem;
+  }
+
+}
+.burger-header-button {
+  margin: 1rem;
+  @include respond(desktop) {
+    margin-top: 1.5rem;
+  }
+  @include respond(phone) {
+    margin-top: 2.5rem;
+  }
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  -webkit-text-stroke: 0 !important;
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  @include respond(big-desktop) {
+    max-width: 75%;
+  }
+  @include respond(desktop) {
+    max-width: 70%;
+  }
+  @include respond(phone) {
+    max-width: 90%;
+  }
+
+}
+
+.burger-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  @include respond(phone) {
+    margin: 6rem 0;
+  }
+  @media (max-height: 46.9em) and (max-width: 37.5em) {
+    margin: 2rem 0;
+  }
+}
+
+.category {
+  background-color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 10rem 0 1rem;
+}
+
+.category_title {
+  text-align: center;
+}
+
+.category_title h5 {
+  color: #a5102e;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.category_burgers {
+  padding: 8rem 0 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.category_burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.category_burger_image {
+  width: 100%;
+}
+.category_heading {
+  color: #6e4d42;
+  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 200%;
+  font-family: inherit;
+  vertical-align: baseline;
+  -webkit-text-stroke: 0 !important;
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.category_fries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#burger-statistics {
+  background-image: url("../../image/blur-cheese.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 10rem 0 10rem;
+  background-color: #f9c744;
+}
+
+#burger-statistics h4.primary-heading {
+  color: black;
+  font-size: 2.5rem !important;
+  margin-top: 2rem;
+}
+
+#burger-statistics .wrapper {
+  display: flex;
+  align-items: center;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+
+#burger-statistics .col-3,
+#burger-statistics .col-6 {
+  @include respond(tab-port) {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+#other-food-items {
+  background-image: url("../../image/blur-fries.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 10rem 0 10rem;
+  background-color: #f9c744;
+}
+#burger-builder {
+  background-color: #f8f8f8 !important;
+  padding: 10rem 0 10rem;
+}
+.burger_image_content {
+  & > * {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.sides {
+  text-align: center;
+  &_image {
+    height: 50rem;
+    display: block;
+    margin: 5rem auto;
+    @include respond(phone) {
+      width: 100%;
+      height: auto
+    }  
+  }
+}
+
+@import "../components/burger";
+@import "../components/details";
+@import "../layout/footer";

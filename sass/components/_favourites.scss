@@ -1,0 +1,42 @@
+.fav{
+  border: 2px solid #e8e8e8;
+  width: 90rem;
+  margin: auto;
+  &_list{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    &:nth-child(even){
+      background-color: #fafafa !important
+    }
+  }
+  &_icon{
+    width: 5%;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  &_image{
+    width: 15%;
+    img{
+      height: 10rem;
+    }
+  }
+  &_title{
+    width: 35%;
+    font-size: 1.6rem;
+  }
+  &_price{
+    width: 10%;
+    &-subscript{
+
+    }
+  }
+  &_stockInfo{
+    width: 15%;
+  }
+  &_button{
+    width: 20%;
+  }
+}

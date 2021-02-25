@@ -1,0 +1,13 @@
+@import "../layout/base";
+@import "../layout/footer";
+@import "../components/menu";
+@import "../components/burger";
+@import "../components/product-menu";
+
+header{
+  background-image: url(../../image/back-contacts-title-burger2.jpg);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}

@@ -1,0 +1,22 @@
+@import "../layout/base";
+@import "../components/menu";
+@import "../layout/footer";
+
+header {
+  background-image: url(../../image/back-about-title-burger.jpg);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+.about_burger_image {
+  text-align: center;
+  margin: 10rem 0 0;
+}
+#food_description {
+  background-image: url("../../image/blur-fries.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 10rem 0 10rem;
+  background-color: #f9c744;
+}
+

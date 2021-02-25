@@ -1,0 +1,37 @@
+.footer {
+  background-color: #a5102e;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  &_image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  &_ending {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0 2rem;
+    @include respond(phone) {
+      flex-direction: column;
+    }  
+  }
+  &_terms {
+    color: white;
+    margin: 10px 10px 20px 5px;
+    text-align: center;
+    font-weight: 200;
+    
+  }
+  &_icon-wrapper {
+    text-align: center;
+  }
+  &_image-burger {
+    width:250px;
+  }
+  &_icon {
+    padding: 0 .5rem; 
+    font-size: 2rem !important;
+  }
+}

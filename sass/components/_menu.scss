@@ -1,0 +1,92 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_item {
+  display: inline-block;
+  margin: 1rem;
+  @include respond(phone) {
+    margin: .8rem;
+  }
+
+  &-phone {
+    display: none;
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+.menu_link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  @include respond(phone) {
+    font-size: 1.3rem;
+  }
+  @media (max-height: 42.5em) and (max-width: 22.5em) {
+    font-size: 1.2rem;
+  }
+
+}
+
+#menu_logo {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+#logo {
+  width: 10rem;
+  margin: 0 5rem;
+}
+
+.menu_box {
+  background-color: #a5102e;
+  box-shadow: 0 0px 30px 0 #0000001f;
+  position: absolute;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: #fff !important;
+  @include respond(phone) {
+    position: static;
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+
+.menu_icon {
+  color: #fff !important;
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  &:hover {
+    color: #ffb100;
+  }
+}
+
+.callbox {
+  &_title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 250;
+    margin: 0 auto;
+  }
+  &_main-title {
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding: 0.5rem 0.3rem;
+  }
+}

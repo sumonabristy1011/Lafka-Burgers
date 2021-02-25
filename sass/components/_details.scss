@@ -1,0 +1,43 @@
+.detail {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 6rem 2rem;
+  text-align: center;
+  &_wrapper {
+    margin-bottom: 2rem;
+  }
+  &_icon {
+    font-size: 3rem;
+    color: rgba(82, 73, 28, 0.5);
+    & img {
+      height: 5.5rem;
+    }
+  }
+  &_cheese_icon {
+    color: rgba(82, 73, 28, 0.5);
+  }
+  &_burger-image {
+    @include respond(phone) {
+      width: 100%;
+    }  
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+  &_headline {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 300;
+    margin-bottom: .5rem;
+    text-align: center;
+    &-bold {
+      font-weight: 500;
+      font-size: 3rem;
+      color: brown;
+    }
+  }
+  &_info {
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+}
