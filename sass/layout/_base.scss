@@ -95,6 +95,28 @@ a {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -65%);
+  @media (min-height: 62.5em) {
+    top: 45%;
+  }
+  @media (min-height: 62.5em) and (max-width: 75em) {
+    top: 70%;
+  }
+
+  @media (max-height: 40em) and (max-width: 25em) {
+    top: 80%;
+  }
+  @include respond(tab-port) {
+    width: 80%;
+  }
+
+  @include respond(phone) {
+    margin: 2rem 0 0;
+    width: 90%;
+  }  
+  @media (max-height: 42.5em) and (max-width: 22.5em) {
+    top: 65%;
+  }
+
   &_breadcrumb {
     font-size: 1.4rem;
     font-weight: 300;
@@ -105,11 +127,21 @@ a {
     text-transform: uppercase;
     font-size: 5.5rem;
     padding: 3rem 2rem;
+    @include respond(phone) {
+      font-size: 4rem;
+      padding: 2rem 1rem;
+    }  
+    @media (max-height: 40em) and (max-width: 25em) {
+      font-size: 3rem;
+    }  
   }
   &_text {
     font-size: 2.1rem;
     font-weight: 300;
     margin: 0 auto;
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }  
   }
 }
 
@@ -121,6 +153,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include respond(phone) {
+    font-size: 2rem;
+  }  
   span {
     display: inline-block;
     font-size: 1.5rem;
@@ -130,5 +165,8 @@ a {
     width: 3rem;
     margin-right: 2rem;
     color: #fff;
+    @include respond(phone) {
+      margin-right: 1rem;
+    }    
   }
 }

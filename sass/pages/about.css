@@ -135,6 +135,43 @@ a {
           transform: translate(-50%, -65%);
 }
 
+@media (min-height: 62.5em) {
+  .hero-content {
+    top: 45%;
+  }
+}
+
+@media (min-height: 62.5em) and (max-width: 75em) {
+  .hero-content {
+    top: 70%;
+  }
+}
+
+@media (max-height: 40em) and (max-width: 25em) {
+  .hero-content {
+    top: 80%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .hero-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .hero-content {
+    margin: 2rem 0 0;
+    width: 90%;
+  }
+}
+
+@media (max-height: 42.5em) and (max-width: 22.5em) {
+  .hero-content {
+    top: 65%;
+  }
+}
+
 .hero-content_breadcrumb {
   font-size: 1.4rem;
   font-weight: 300;
@@ -148,10 +185,29 @@ a {
   padding: 3rem 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .hero-content_title {
+    font-size: 4rem;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-height: 40em) and (max-width: 25em) {
+  .hero-content_title {
+    font-size: 3rem;
+  }
+}
+
 .hero-content_text {
   font-size: 2.1rem;
   font-weight: 300;
   margin: 0 auto;
+}
+
+@media (max-width: 37.5em) {
+  .hero-content_text {
+    font-size: 1.6rem;
+  }
 }
 
 .para-title {
@@ -170,6 +226,12 @@ a {
           align-items: center;
 }
 
+@media (max-width: 37.5em) {
+  .para-title {
+    font-size: 2rem;
+  }
+}
+
 .para-title span {
   display: inline-block;
   font-size: 1.5rem;
@@ -179,6 +241,12 @@ a {
   width: 3rem;
   margin-right: 2rem;
   color: #fff;
+}
+
+@media (max-width: 37.5em) {
+  .para-title span {
+    margin-right: 1rem;
+  }
 }
 
 nav {
@@ -365,9 +433,79 @@ header {
   width: 100%;
 }
 
+@media (min-height: 62.5em) and (max-width: 75em) {
+  header {
+    height: 60vh;
+  }
+}
+
+@media (max-height: 40em) and (max-width: 25em) {
+  header {
+    height: 100vh;
+  }
+}
+
+#about_quality {
+  margin: 10rem 0;
+}
+
+@media (max-width: 37.5em) {
+  #about_quality {
+    margin: 6rem 0 8rem;
+  }
+}
+
+.about_category_heading {
+  color: #22272d;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
 .about_burger_image {
   text-align: center;
   margin: 10rem 0 0;
+}
+
+.about_burger_image img {
+  width: 100%;
+}
+
+.about_burger-content {
+  font-size: 1.7rem;
+  color: #999;
+  width: 90rem;
+  font-weight: 400;
+  margin: 5rem auto 5rem;
+  text-align: center;
+}
+
+@media (max-width: 56.25em) {
+  .about_burger-content {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .about_burger-content {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+#about_signature {
+  background-color: #22272d !important;
+  padding: 10rem;
+}
+
+@media (max-width: 37.5em) {
+  #about_signature {
+    padding: 10rem 2rem;
+  }
+}
+
+#award_image {
+  width: 100%;
 }
 
 #food_description {

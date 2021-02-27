@@ -16,6 +16,9 @@
 <body>
   <header>
     <div class="burger-menu-wrapper">
+      <div class="menu_item-phone">
+        <img src="./image/flame-burgers-logo-clean.png" id="logo" alt="Burger Logo">
+      </div>
       <nav>
         <ul class="menu">
           <li class="menu_item">
@@ -24,17 +27,11 @@
           <li class="menu_item">
             <a href="./about.php" class="menu_link">About Burgers</a>
           </li>
-          <li class="menu_item">
-            <a href="./locations.php" class="menu_link">Locations</a>
-          </li>
           <li class="menu_item" id="menu_logo">
             <img src="./image/flame-burgers-logo-clean.png" id="logo" alt="Burger Logo">
           </li>
           <li class="menu_item">
             <a href="./order.php" class="menu_link">Order online</a>
-          </li>
-          <li class="menu_item">
-            <a href="" class="menu_link">Blog</a>
           </li>
           <li class="menu_item">
             <a href="./contact.php" class="menu_link">Contacts</a>
@@ -86,7 +83,7 @@
     </div>
     <!-- </Replicate> -->
     <div class="burger-content-wrapper">
-      <div class="hero-content" style="color: #333; top: 50%">
+      <div class="hero-content">
         <h5 class="hero-content_breadcrumb">
           HOME / MY ORDER
         </h5>

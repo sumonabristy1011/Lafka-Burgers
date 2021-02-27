@@ -16,6 +16,16 @@ header {
     font-size:40px;
 }
 
+#burger_contact .col-5,
+#burger_contact .col-7{
+	@include respond(tab-port) {
+		width: 100%;
+	}
+}
+
+#burger_contact .col-5{
+	text-align: center;
+}
 
 .body.container {
 	// max-width:400px;

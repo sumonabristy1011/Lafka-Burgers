@@ -7,10 +7,57 @@ header {
   background-size: cover;
   height: 90vh;
   width: 100%;
+  @media (min-height: 62.5em) and (max-width: 75em) {
+    height: 60vh;
+  }
+  @media (max-height: 40em) and (max-width: 25em) {
+    height: 100vh;
+  }
+}
+#about_quality {
+  margin: 10rem 0;
+  @include respond(phone) {
+    margin: 6rem 0 8rem;
+  }
+}
+.about_category_heading {
+  color: #22272d;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
 }
 .about_burger_image {
   text-align: center;
   margin: 10rem 0 0;
+  img {
+    width: 100%;
+  }
+}
+
+.about_burger-content {
+  font-size: 1.7rem;
+  color: #999;
+  width: 90rem;
+  font-weight: 400;
+  margin: 5rem auto 5rem;
+  text-align: center;
+  @include respond(tab-port) {
+    width: 60rem;
+  }
+  @include respond(phone) {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+#about_signature {
+  background-color: #22272d !important;
+  padding: 10rem;
+  @include respond(phone) {
+    padding: 10rem 2rem;
+  }
+}
+#award_image {
+  width: 100%;
 }
 #food_description {
   background-image: url("../../image/blur-fries.png");
@@ -19,4 +66,3 @@ header {
   padding: 10rem 0 10rem;
   background-color: #f9c744;
 }
-

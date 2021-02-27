@@ -18,6 +18,9 @@
 
 <body>
   <header>
+    <div class="menu_item-phone">
+      <img src="./image/flame-burgers-logo-clean.png" id="logo" alt="Burger Logo">
+    </div>
     <nav>
       <ul class="menu">
         <li class="menu_item">
@@ -60,7 +63,7 @@
 
     </div>
   </header>
-  <Section>
+  <Section id="burger_contact">
     <div class="container">
       <div class="row">
         <div class="col-5">

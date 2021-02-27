@@ -10,4 +10,11 @@ header{
   height: 90vh;
   width: 100%;
   position: relative;
+  @media (min-height: 62.5em) and (max-width: 75em) {
+    height: 60vh;
+  }
+  @media (max-height: 42.5em) and (max-width: 22.5em) {
+    height: 120vh;
+  }
+
 }

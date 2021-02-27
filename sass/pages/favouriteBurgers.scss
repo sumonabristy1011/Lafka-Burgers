@@ -5,13 +5,43 @@
 @import "../components/favourites";
 
 .burger-menu-wrapper {
-  height: 30vh;
+  height: 33vh;
   width: 100%;
   background-color: #a5102e;
+  @media (min-height: 64em) and (max-width: 75em) {
+    height: 22vh;
+  }
+  @include respond(phone) {
+    height: 35vh;
+  }  
+  & .product{
+    @media (min-height: 64em) and (max-width: 75em) {
+      top: 22%;
+    }
+    @include respond(phone) {
+      display: none;
+    }  
+  }
 }
 
 .burger-content-wrapper{
   height: 30vh;
   width: 100%;
   background-color: #eee;
+  position: relative;
+  @media (min-height: 62.5em) and (max-width: 75em) {
+    height: 20vh;
+  }
+
+  & .hero-content{
+    top: 70%;
+    color: #333;
+    @include respond(phone) {
+      top: 55%;
+    }  
+  }
+}
+
+#favourites{
+  padding: 5rem 0;
 }

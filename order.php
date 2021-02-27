@@ -18,6 +18,9 @@
 
 <body>
     <header>
+        <div class="menu_item-phone">
+            <img src="./image/flame-burgers-logo-clean.png" id="logo" alt="Burger Logo">
+        </div>
         <nav>
             <ul class="menu">
                 <li class="menu_item">
@@ -79,12 +82,6 @@
                 </li>
             </ul>
         </div>
-        <div class="menu_box" style="right: 15%;">
-            <a href="./auth.php"><i class="fas fa-user menu_icon"></i></a>
-            <a href="./favouriteBurgers.php"><i class="far fa-heart menu_icon"></i></a>
-            <a href="./orderCart.php"><i class="fas fa-shopping-cart menu_icon"></i></a>
-            <i class="fas fa-search menu_icon"></i>
-        </div>
         <div class="hero-content">
             <h5 class="hero-content_breadcrumb">
                 HOME /ORDER ONLINE
@@ -98,8 +95,8 @@
         </div>
     </header>
 
-    <section>
-        <div class="container" style="padding: 7rem 0 5rem;">
+    <section class="burger-container">
+        <div class="container">
             <div class="row" id="product-container">
                 <div class="col-4">
                     <div class="burger">
@@ -500,7 +497,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
